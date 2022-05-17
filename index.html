@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weartake</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <figure id="logo">
+                <a href="#"><img src="imgs/logoMarcaHeader.png" alt="Logo Marca Weartake"></a>
+            </figure>
+            <nav class="menuHeader">
+                <ul class="menuTopo">
+                    <li id="itemMenuTopo"><a href="#">Todos</a></li>
+                    <li id="itemMenuTopo"><a href="#">Acessórios</a></li>
+                    <li id="itemMenuTopo"><a href="#">Calçados</a></li>
+                    <li id="itemMenuTopo"><a href="#">Camisetas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="display">
+            <ul class="listaProdutos">
+                <li id="itemProduto">
+                    <figure class="imgProdutoDisplay">
+                        <img src="imgs/product_1.png" alt="Camiseta Preta Lisa">
+                    </figure>
+                    <section class="descricaoProduto">
+                        <h4><a href="#">Camistas</a></h4>
+                        <h2>Camiseta Preta Lisa</h2>
+                        <p>Est nam dolor magni dicta delectus doloremque aliquid alias aspernatur similique, ratione perspiciatis.</p>
+                        <span>R$123,45</span>
+                        <a id="addCarrinho" href="#">Adicionar ao carrinho</a>
+                    </section>
+                </li>
+                <li id="itemProduto">
+                    <figure class="imgProdutoDisplay">
+                        <img src="imgs/product_2.png" alt="Boné Cinza">
+                    </figure>
+                    <section class="descricaoProduto">
+                        <h4><a href="#">Acessórios</a></h4>
+                        <h2>Boné Cinza</h2>
+                        <p>Ad modi at corporis nostrum dolorem ea quo quasi.</p>
+                        <span>R$123,45</span>
+                        <a id="addCarrinho" href="#">Adicionar ao carrinho</a>
+                    </section>
+                </li>
+                <li id="itemProduto">
+                    <figure class="imgProdutoDisplay">
+                        <img src="imgs/product_3.png" alt="Gorro Preto">
+                    </figure>
+                    <section class="descricaoProduto">
+                        <h4><a href="#">Acessórios</a></h4>
+                        <h2>Gorro Preto</h2>
+                        <p>Unde omnis, accusamus magnam quasi harum cupiditate cumque voluptate repellendus obcaecati, rerum mollitia ducimus asperiores, eaque nihil id ut odit delectus minus?</p>
+                        <span>R$123,45</span>
+                        <a id="addCarrinho" href="#">Adicionar ao carrinho</a>
+                    </section>
+                </li>
+                <li id="itemProduto">
+                    <figure class="imgProdutoDisplay">
+                        <img src="imgs/product_4.png" alt="Camiseta Branca Escrita">
+                    </figure>
+                    <section class="descricaoProduto">
+                        <h4><a href="#">Camisetas</a></h4>
+                        <h2>Camiseta Branca Escrita</h2>
+                        <p>Dicta illo esse deserunt. Ipsam quis laudantium hic ratione et repellat aspernatur eligendi totam.</p>
+                        <span>R$123,45</span>
+                        <a id="addCarrinho" href="#">Adicionar ao carrinho</a>
+                    </section>
+                </li>
+                <li id="itemProduto">
+                    <figure class="imgProdutoDisplay">
+                        <img src="imgs/product_5.png" alt="Camiseta Branca Lisa">
+                    </figure>
+                    <section class="descricaoProduto">
+                        <h4><a href="#">Camisetas</a></h4>
+                        <h2>Camiseta Branca Lisa</h2>
+                        <p> Soluta consectetur iusto corrupti nesciunt blanditiis aspernatur necessitatibus.</p>
+                        <span>R$123,45</span>
+                        <a id="addCarrinho" href="#">Adicionar ao carrinho</a>
+                    </section>
+                </li>
+                <li id="itemProduto">
+                    <figure class="imgProdutoDisplay">
+                        <img src="imgs/product_6.png" alt="Camiseta Branca Escrita">
+                    </figure>
+                    <section class="descricaoProduto">
+                        <h4><a href="#">Camisetas</a></h4>
+                        <h2>Camiseta Branca Escrita</h2>
+                        <p>Minima quibusdam omnis, sequi optio molestiae dicta aut odit. Eaque totam vero nam minima libero eum amet optio magnam commodi.</p>
+                        <span>R$123,45</span>
+                        <a id="addCarrinho" href="#">Adicionar ao carrinho</a>
+                    </section>
+                </li>
+            </ul>
+        </div>
+        <aside class="lateral">
+            <form id="pesquisaProdutos">
+                <input id="pesquisaCategoria" type="text" placeholder="Digite aqui sua pesquisa">
+                <button>Pesquisar</button>
+            </form>
+            <section class="carrinhoCompras">
+                <p>Carrinho de compras</p>
+                <!-- Essa section aparecerá quando não tem itens -->
+                <section class="carrinhoVazio">
+                    <h5>Carrinho Vazio</h5>
+                    <p>Adicione itens ao carrinho</p>
+                </section>
+                <!-- Essa ul fica oculta quando não tem itens -->
+                <ul class="produtosCarrinho">
+                    <li id="itemCarrinho">
+                        <figure class="produtoNoCarrinho">
+                            <img src="imgs/product_1.png" alt="Camiseta Preta Lisa">
+                        </figure>
+                        <div class="infosItemCarrinho">
+                            <p>Nome do Produto</p>
+                            <span>R$123,45</span>
+                            <a href="#" id="removerProduto">Remover produto</a>
+                        </div>
+                    </li>
+                    <li id="itemCarrinho">
+                        <figure class="produtoNoCarrinho">
+                            <img src="imgs/product_3.png" alt="Gorro Preto">
+                        </figure>
+                        <div class="infosItemCarrinho">
+                            <p>Nome do Produto</p>
+                            <span>R$123,45</span>
+                            <a href="#" id="removerProduto">Remover produto</a>
+                        </div>
+                    </li>
+                    <li id="itemCarrinho">
+                        <figure class="produtoNoCarrinho">
+                            <img src="imgs/product_5.png" alt="Camiseta Branca Lisa">
+                        </figure>
+                        <div class="infosItemCarrinho">
+                            <p>Nome do Produto</p>
+                            <span>R$123,45</span>
+                            <a href="#" id="removerProduto">Remover produto</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Essa section só aparecerá quando tem pelo menos 1 item -->
+                <section class="detalhesCompra">
+                    <p>Quantidade: <span id="quantosItens">3</span></p>
+                    <p>Total: <span id="valorTotalCompra">R$370,35</span></p>
+                </section>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <div class="rodape">
+            <ul class="menuRodape">
+                <li id="itemMenuRodape"><a href="#">Todos</a></li>
+                <li id="itemMenuRodape"><a href="#">Acessórios</a></li>
+                <li id="itemMenuRodape"><a href="#">Calçados</a></li>
+                <li id="itemMenuRodape"><a href="#">Camisetas</a></li>
+            </ul>
+            <span class="copyright">&copy; Dieison&rsquo;s Development,
+                <script>
+                    date = new Date().getFullYear()
+                    document.write(date)
+                </script>.
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
